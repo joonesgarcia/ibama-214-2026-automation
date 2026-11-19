@@ -1,0 +1,442 @@
+[
+  {
+    "item-index": 5,
+    "item-original": "Art. 1º Fica instituída a lista das espécies silvestres, que poderão ser criadas e comercializadas como animais de estimação para cativeiro domiciliar, conforme previsto pela Resolução Conama nº 394, de 06 de novembro de 2007.",
+    "item-comment": "Apoia-se a instituição de uma lista nacional de espécies silvestres nativas passíveis de criação e comercialização como animais de estimação para conferir segurança jurídica a criadores, compradores e órgãos fiscalizadores. Contudo, a proposta carece de motivação técnica explícita (Lei nº 9.784/1999, art. 50; LINDB, art. 20), pois foi submetida à consulta pública sem a nota técnica que demonstra a aplicação dos nove critérios da Resolução Conama nº 394/2007, sem Análise de Impacto Regulatório (AIR) ou dispensa fundamentada (Lei nº 13.874/2019, art. 5º; Decreto nº 10.411/2020) e com prazo inferior aos 45 dias regulamentares. Recomenda-se condicionar a instituição da lista à prévia publicação dos estudos técnicos e da AIR, com reabertura da consulta pública por no mínimo 45 dias."
+  },
+  {
+    "item-index": 6,
+    "item-original": "Parágrafo único. Esta Instrução Normativa se aplica a todos os processos autorizativos para criadores comerciais com a finalidade de animal de estimação, estabelecimentos de revenda de animais vivos e cativeiro domiciliar de animais silvestres, inclusive os iniciados posteriormente à edição da Lei Complementar nº 140, de 8 de dezembro de 2011, nos casos de delegação previstos no art. 5º, nas competências previstas nos artigos 7º e 8º, bem como para as hipóteses de supletividade admitidas no art. 15, da Lei Complementar em referência.",
+    "item-comment": "A aplicação imediata e irrestrita da norma a todos os processos autorizativos estaduais impacta diretamente criadouros regularmente autorizados e espécies hoje admitidas em estados com listas positivas ou negativas (ES, MG, PE, RJ, AL, PR), além de excluir 39% das vendas das nove espécies nativas mais comercializadas segundo o próprio diagnóstico do Ibama (Trajano & Carneiro, 2019). Propõe-se incluir o Art. 3º-A para preservar os criadouros comerciais já autorizados e plantéis registrados (vedado o aumento de reprodutores ou novos criadouros) até que o Ibama avalie individualmente, em até 12 meses e segundo o art. 4º da Resolução Conama nº 394/2007, as espécies com venda registrada no SisFauna ou admitidas pelos estados, contando-se os prazos do art. 11 apenas após decisão fundamentada de exclusão."
+  },
+  {
+    "item-index": 9,
+    "item-original": "Art. 2º Para os efeitos desta Instrução Normativa, adotam-se as seguintes definições:",
+    "item-comment": "As definições do art. 2º devem guardar plena coerência técnica com as exigências de recintos do art. 9º e do Anexo II, bem como com a desburocratização do Certificado de Origem eletrônico (art. 7º), evitando contradições internas como exigir banheira em todo terrário quando o próprio artigo restringe o ambiente aquático ao paludário."
+  },
+  {
+    "item-index": 10,
+    "item-original": "I - Animal silvestre de estimação: animal proveniente de espécies da fauna silvestre, ou seja, nativa do Brasil, nascido em criadouro comercial legalmente autorizado, mantido em cativeiro domiciliar, para fins de companhia, sem finalidade de abate, vedada a reprodução, uso científico, comercial, laboratorial, ou qualquer outro que não seja como animal de estimação;",
+    "item-comment": "Conforme a Manifestação Técnico-Científica, defende-se uma criação controlada, documentada e auditável. A vedação à reprodução em cativeiro domiciliar reforça o controle sanitário e genético, mas deve ser acompanhada de rastreabilidade efetiva e auditoria na origem comercial (novo art. 7º-A) para evitar o desvio da demanda ao mercado ilegal ou a espécies exóticas invasoras (Fonseca et al., 2021)."
+  },
+  {
+    "item-index": 11,
+    "item-original": "II - Animais arborícolas: animal adaptado à vida em ambiente arbóreo, que utiliza predominantemente árvores, galhos, copas ou estruturas elevadas como substrato para a execução de seus comportamentos naturais, incluindo locomoção, alimentação, repouso, reprodução e fuga de predadores;",
+    "item-comment": "Embora o inciso II defina animais arborícolas e o art. 9º, § 2º exija estratificação vertical, o Anexo II não diferencia altura nem complexidade do recinto por hábito ecológico. Sugere-se vincular expressamente esta definição aos parâmetros diferenciados de recinto propostos no art. 9º-B e na nota técnica do art. 9º-D."
+  },
+  {
+    "item-index": 12,
+    "item-original": "III - Animais semiarborícolas: animal adaptado à utilização tanto do ambiente terrestre quanto do arbóreo, realizando em ambos a execução de seus comportamentos naturais, incluindo locomoção, alimentação, repouso, reprodução e fuga de predadores;",
+    "item-comment": "A definição de animais semiarborícolas deve refletir-se diretamente nos parâmetros dimensionais e na estratificação vertical do Anexo II (proposta de art. 9º-B), garantindo coerência entre a classificação ecológica do art. 2º e as exigências físicas do recinto."
+  },
+  {
+    "item-index": 13,
+    "item-original": "IV - Animais ectotérmicos: animal que depende predominantemente de fontes externas de calor para a regulação de sua temperatura corporal, adotando comportamentos e utilizando características do ambiente para manter condições adequadas ao desempenho de suas funções fisiológicas;",
+    "item-comment": "A definição de animais ectotérmicos exige coerência com o gradiente térmico (art. 9º, § 3º) e com as exigências hídricas: répteis ectotérmicos de ambientes áridos demandam baixa umidade e temperatura elevada, sendo tecnicamente inadequada a imposição genérica de banheira de imersão prevista no art. 9º, § 7º (De la Fuente et al., 2023)."
+  },
+  {
+    "item-index": 14,
+    "item-original": "V - Animal semiaquático: animal adaptado à vida em ambientes aquáticos e terrestres, que utiliza regularmente corpos d'água para alimentação, deslocamento, reprodução, termorregulação ou outras atividades essenciais, mantendo também parte significativa de seu ciclo de vida em ambiente terrestre;",
+    "item-comment": "Em consonância com a definição de animal semiaquático (inciso V) e de paludário (inciso XV), a exigência de lâmina d'água ou área aquática para banho no art. 9º, § 7º deve ser restrita às espécies de hábito semiaquático ou cujo ambiente natural assim o exija, conforme nota técnica."
+  },
+  {
+    "item-index": 15,
+    "item-original": "VI - Cativeiro domiciliar: residência de endereço fixo, domicílio de pessoa física, onde o animal da fauna silvestre deverá ser mantido em ambiente doméstico para fins de estimação;",
+    "item-comment": "A definição de cativeiro domiciliar reforça a distinção entre residência de pessoa física e empreendimento zoológico (IN Ibama nº 7/2015), o que exige que os parâmetros dimensionais do Anexo II sejam tecnicamente justificados e proporcionais ao ambiente doméstico, sem saltos inviáveis como viveiros de 10 metros de comprimento em residências."
+  },
+  {
+    "item-index": 16,
+    "item-original": "VII - Espécie: conjunto de indivíduos semelhantes e com potencial reprodutivo entre si, capazes de originar descendentes férteis, incluindo aqueles que se reproduzem por meios assexuados;",
+    "item-comment": "Na aplicação do conceito de espécie para composição e revisão da lista (arts. 3º, 15 e 16), o Ibama deve publicar os critérios técnico-científicos e a avaliação individualizada dos nove quesitos do art. 4º da Resolução Conama nº 394/2007, inclusive quanto ao risco de hibridação em zonas de sintopia."
+  },
+  {
+    "item-index": 17,
+    "item-original": "VIII - Espécime: indivíduo ou exemplar de uma espécie;",
+    "item-comment": "A identificação e a avaliação biométrica do espécime no Anexo II exigem definição objetiva da medida utilizada (comprimento total para serpentes e aves, comprimento rostro-cloacal para lagartos e comprimento retilíneo da carapaça para quelônios, conforme proposta de art. 9º-A)."
+  },
+  {
+    "item-index": 18,
+    "item-original": "IX - Fauna silvestre: todo animal pertencente a espécie nativa, migratória e qualquer outra não exótica, que tenha todo ou parte do seu ciclo de vida ocorrendo dentro dos limites do território brasileiro ou águas jurisdicionais brasileiras;",
+    "item-comment": "Observa-se assimetria regulatória: enquanto a minuta restringe severamente espécies da fauna silvestre nativa sem estudo de impacto, espécies exóticas — inclusive de alto potencial invasor ou portadoras de patógenos como a quitridiomicose — permanecem mais acessíveis no mercado, desviando a demanda (Trajano & Carneiro, 2019; Pistoni & Toledo, 2010)."
+  },
+  {
+    "item-index": 19,
+    "item-original": "X - Guarda Responsável: o compromisso assumido por cidadão que adquire espécime da fauna silvestre brasileira, devendo proporcionar ao animal um ambiente e condições adequadas a sua manutenção, saúde física e comportamental, prevenir e assumir os riscos potenciais de agressão, danos ou transmissão de doenças a terceiros, bem como se comprometer a não abandoná-lo ou soltá-lo em ambientes naturais em caso de desistência de sua posse, dando-lhe destinação adequada;",
+    "item-comment": "Apoia-se o compromisso de Guarda Responsável e a proibição de abandono ou soltura na natureza. Para torná-lo auditável e prevenir o abandono, recomenda-se que a devolução prevista no art. 8º, X seja obrigatoriamente registrada no sistema oficial de gestão de fauna."
+  },
+  {
+    "item-index": 20,
+    "item-original": "XI - Recinto: local onde os espécimes são mantidos em cativeiro domiciliar;",
+    "item-comment": "A definição de recinto deve ser complementada por critérios biométricos claros (art. 9º-A), diferenciação por hábito ecológico e estágio de vida (art. 9º-B) e coeficientes técnicos proporcionais (art. 9º-D), eliminando as ambiguidades atuais do Anexo II."
+  },
+  {
+    "item-index": 21,
+    "item-original": "XII - Gaiolas: estrutura gradeada que pode ser pendurada;",
+    "item-comment": "A regulamentação de gaiolas no art. 9º e no Anexo II deve corrigir a sobreposição de faixas de tamanho ('> 21 adiante' vs. '> 30 a 65') e adequar a exigência de banheira (§ 7º) ao hábito da espécie."
+  },
+  {
+    "item-index": 22,
+    "item-original": "XIII - Viveiros: Estrutura gradeada, em pelo menos uma de suas faces, com sustentação acima ou diretamente no chão;",
+    "item-comment": "Os parâmetros mínimos para viveiros no Anexo II apresentam saltos desproporcionais (passando de 2,25 m para 10 m de comprimento acima de 65 cm, quatro vezes a área por ave exigida de zoológicos na IN Ibama nº 7/2015) e devem ser revistos com base em coeficientes técnicos fundamentados."
+  },
+  {
+    "item-index": 23,
+    "item-original": "XIV - Terrários: estrutura de vidro, acrílico ou material similar, em ao menos uma de suas faces, possuindo substrato e vegetação de acordo com os hábitos da espécie, com o objetivo de simular o habitat da espécie;",
+    "item-comment": "A definição de terrário já contempla corretamente a simulação do habitat conforme os hábitos da espécie, o que contrasta com a exigência indiscriminada de banheira ou lâmina d'água no art. 9º, § 7º para espécies terrestres de ambientes áridos."
+  },
+  {
+    "item-index": 24,
+    "item-original": "XV - Paludário: possui a mesma estrutura de um terrário, acrescido de ambiente aquático para animais de hábito semiaquático;",
+    "item-comment": "A própria minuta define o paludário como o terrário acrescido de ambiente aquático especificamente 'para animais de hábito semiaquático', razão pela qual o art. 9º, § 7º deve ser alterado para restringir a exigência de lâmina d'água ao hábito e ambiente natural da espécie, além de esclarecer a nota de rodapé '1' ausente no Anexo II."
+  },
+  {
+    "item-index": 25,
+    "item-original": "XVI - SisFauna: Sistema Nacional de Gestão de Fauna Silvestre;",
+    "item-comment": "O SisFauna deve ser utilizado não apenas para emissão do Certificado de Origem, mas também como instrumento de auditoria amostral baseada em risco da produção declarada pelos criadouros (proposta de art. 7º-A) e para registro eletrônico de transferências e devoluções (art. 7º, § 3º)."
+  },
+  {
+    "item-index": 26,
+    "item-original": "XVII - SisPass: Sistema de Gestão da Criação Amadora de Passeriformes Silvestres;",
+    "item-comment": "A integração entre SisPass e SisFauna/Plataforma Nacional de Fauna (art. 14) exige cronograma claro de parametrização e padronização prévia das anilhas conforme a Resolução Conama nº 487/2018 antes de impor obrigações de transição aos criadores."
+  },
+  {
+    "item-index": 27,
+    "item-original": "XVIII - Certificado de origem: documento emitido por sistema oficial de gestão de fauna que comprove a origem regular de animal silvestre comercializado por criador autorizado, contendo informações que permitam a identificação individual do espécime, com nome científico e código de marcação, vinculado ao empreendimento de origem com sua respectiva qualificação, assim como do adquirente, e seja passível de autenticação imediata na rede mundial de computadores; e",
+    "item-comment": "Dado que o Certificado de Origem já contém identificação individual do espécime, código de marcação, endereço registrado e autenticação imediata pela internet, ele deve valer como autorização de transporte em território nacional (art. 7º, § 2º), dispensando autorizações por viagem."
+  },
+  {
+    "item-index": 28,
+    "item-original": "XIX - Cetras/Cetas: Centro de triagem e reabilitação de fauna silvestre.",
+    "item-comment": "Antes de impor prazos de transição que possam gerar entrega forçada de plantéis (art. 11, § 1º), o Ibama deve levantar e publicar a real capacidade de recebimento dos Cetas/Cetras, que atualmente operam com estrutura limitada e precária na maioria dos estados (Fonseca et al., 2021)."
+  },
+  {
+    "item-index": 29,
+    "item-original": "Art. 3º Ficam estabelecidas exclusivamente as espécies do Anexo I para comporem a Lista das espécies silvestres nativas que poderão ser criadas e comercializadas como animais de estimação.",
+    "item-comment": "Propõe-se alterar a redação do art. 3º para: 'Art. 3º Ficam estabelecidas as espécies do Anexo I, avaliadas segundo os critérios do art. 4º da Resolução Conama nº 394/2007, conforme a nota técnica que fundamenta esta Instrução Normativa e apresenta, para cada espécie avaliada, a análise individualizada de cada critério e as fontes utilizadas.' Adicionalmente, propõe-se o Art. 3º-A para preservar criadouros autorizados e plantéis registrados de espécies excluídas até avaliação individualizada em até 12 meses."
+  },
+  {
+    "item-index": 30,
+    "item-original": "Art. 4º A comercialização, com a finalidade de estimação, de indivíduos de espécies constantes no Anexo I somente poderá ser realizada a partir de geração comprovadamente reproduzida em criadouro comercial legalmente estabelecido.",
+    "item-comment": "Apoia-se a exigência de comprovação de reprodução em criadouro comercial legalmente estabelecido. Para prevenir o 'esquentamento' de fauna sem proibir espécies viáveis, recomenda-se complementar esta regra com o art. 7º-A (auditoria por amostragem da plausibilidade reprodutiva e exame de parentesco por marcadores moleculares quando houver inconsistência)."
+  },
+  {
+    "item-index": 31,
+    "item-original": "§1º No caso de indivíduos de espécies constantes no Anexo I e que também constem na lista oficial de espécies ameaçadas de extinção, a comercialização somente poderá ser realizada a partir da segunda geração (F2).",
+    "item-comment": "Se a minuta admite a criação comercial de espécies ameaçadas de extinção a partir da segunda geração (F2) sob condicionantes, por coerência e proporcionalidade (Lei nº 9.784/1999, art. 2º) deve avaliar sob condicionantes equivalentes espécies não ameaçadas de ampla distribuição e reprodução documentada em cativeiro, como as congêneres do gênero Epicrates (E. assisi, E. cenchria e E. maurus)."
+  },
+  {
+    "item-index": 32,
+    "item-original": "§2º Os empreendimentos comerciais que contenham animais silvestres ameaçados de extinção deverão, obrigatoriamente, disponibilizar indivíduos para participar de programas de conservação, caso solicitado por órgão ambiental competente.",
+    "item-comment": "A previsão de disponibilização de indivíduos de espécies ameaçadas para programas de conservação confirma que a criação comercial regulada e auditada pode contribuir para a conservação ex situ e reduzir a pressão de caça (Resolução Conama nº 394/2007), devendo ser acompanhada de plantéis auditados sem reposição da natureza."
+  },
+  {
+    "item-index": 33,
+    "item-original": "Art. 5º A comercialização de espécimes das espécies listadas no Anexo I com finalidade de animal de estimação será condicionada à marcação definitiva do espécime, segundo a Resolução Conama nº 487, de 15 de maio de 2018.",
+    "item-comment": "A marcação definitiva exigida no art. 5º, somada ao Certificado de Origem autenticável online e ao endereço cadastrado, assegura a rastreabilidade individual do espécime e torna redundante a exigência de autorização prévia a cada transporte (art. 7º, § 2º) e de reconhecimento de firma em cartório para transferência (art. 7º, § 3º)."
+  },
+  {
+    "item-index": 34,
+    "item-original": "Parágrafo único. Para espécies que, na idade de filhote ou juvenil, não suportarem marcação individual definitiva, a comercialização somente será autorizada após os indivíduos atingirem tamanho mínimo de marcação que não cause danos à saúde do indivíduo, nem comprometa a integridade física.",
+    "item-comment": "Apoia-se a salvaguarda ao bem-estar e integridade física de filhotes e juvenis que ainda não comportam marcação definitiva, devendo-se compatibilizar esse prazo de crescimento com as regras de transição reprodutiva propostas nos §§ 5º-A e 5º-B do art. 11."
+  },
+  {
+    "item-index": 35,
+    "item-original": "Art. 6º A venda dos animais do criadouro diretamente ao consumidor ou do criadouro ao comerciante apenas poderá ocorrer quando estes estiverem totalmente emplumados, no caso das aves e em condições de se alimentarem sozinhos para qualquer grupo comercializado.",
+    "item-comment": "A exigência de autonomia alimentar e emplumamento completo antes da venda é adequada ao bem-estar animal, devendo ser considerada no cálculo dos prazos mínimos de alienação de filhotes nascidos durante o período de transição (proposta de art. 11, § 5º-A, com prazo de até 12 meses)."
+  },
+  {
+    "item-index": 38,
+    "item-original": "Art. 7º A regularidade dos espécimes da fauna silvestre comercializados para fins de estimação será comprovada mediante Certificado de Origem emitido por meio do SisFauna ou por sistema eletrônico oficial de gestão de fauna do órgão ambiental competente, observadas as disposições desta Instrução Normativa.",
+    "item-comment": "Apoia-se a comprovação de regularidade via Certificado de Origem no SisFauna. Recomenda-se acrescentar o Art. 7º-A prevendo auditoria amostral priorizada por risco para confrontar a produção declarada com os parâmetros reprodutivos científicos da espécie (tamanho de ninhada/postura, frequência e sazonalidade), com vistoria e exame de parentesco molecular às expensas do criador em caso de incompatibilidade."
+  },
+  {
+    "item-index": 39,
+    "item-original": "§1º O animal deverá ser mantido no endereço que consta em seu documento e as alterações de endereço deverão ser comunicadas ao Órgão Ambiental competente.",
+    "item-comment": "A manutenção do endereço atualizado no sistema oficial garante o controle domiciliar e viabiliza que o próprio Certificado de Origem valha como autorização de transporte em todo o território nacional (proposta de nova redação ao § 2º)."
+  },
+  {
+    "item-index": 40,
+    "item-original": "§2º O transporte do animal, excetuando-se o atendimento Médico Veterinário, depende de autorização do Órgão Ambiental competente nos termos do art. 29 da Lei nº 9.605/98.",
+    "item-comment": "A Lei nº 9.605/1998 (art. 29, § 1º, III) exige permissão, licença ou autorização, mas não impõe emissão de autorização individual a cada viagem quando o espécime já possui marcação definitiva, endereço registrado e Certificado de Origem autenticável pela internet. Propõe-se alterar o § 2º para: '§ 2º O certificado de origem, com o animal marcado e o endereço atualizado no sistema oficial, vale como autorização para o transporte do animal de estimação no território nacional, ressalvadas as exigências sanitárias aplicáveis.'"
+  },
+  {
+    "item-index": 41,
+    "item-original": "§3º A transferência do animal a terceiros, se necessária, deverá ser realizada por meio de termo de transferência registrado em cartório, segundo modelo do anexo III, reconhecimento de firma e informada ao Órgão Ambiental competente.",
+    "item-comment": "Exigir registro em cartório e reconhecimento de firma contraria a Lei nº 13.726/2018 (art. 3º, I), que dispensa o reconhecimento de firma perante a Administração Pública, além de gerar custos desnecessários diante da rastreabilidade digital já existente. Propõe-se alterar o § 3º para: '§ 3º A transferência do animal a terceiros será registrada eletronicamente no sistema oficial de gestão de fauna, com identificação das partes por assinatura eletrônica, código de marcação e certificado de origem.'"
+  },
+  {
+    "item-index": 42,
+    "item-original": "§4º O óbito do animal deverá ser informado ao Órgão Ambiental competente para fins de baixa no sistema.",
+    "item-comment": "A comunicação de óbito para baixa no sistema é essencial para evitar o reaproveitamento fraudulento de anilhas, microchips ou certificados ('esquentamento'), integrando-se à auditoria de plantéis proposta no art. 7º-A."
+  },
+  {
+    "item-index": 43,
+    "item-original": "§5º No caso de óbito do adquirente, o animal deverá ser transferido a terceiros por meio de testamento ou inventário, ou ser entregue ao órgão ambiental competente ou em um centro de triagem e reabilitação de animais silvestres (Cetras/Cetas), que deverá comunicar ao órgão ambiental competente para registro no sistema.",
+    "item-comment": "Em caso de óbito do adquirente, a transferência aos sucessores deve seguir o rito eletrônico simplificado proposto no art. 7º, § 3º, e eventual destinação a Cetas/Cetras deve considerar a capacidade efetiva dessas unidades (seção 3)."
+  },
+  {
+    "item-index": 44,
+    "item-original": "§6º Espécimes de espécies silvestres comercializados antes de 15 de janeiro de 2015 deverão estar acompanhados da nota fiscal original ou eletrônica como comprovante de origem regular, sendo que os dados nela registrados deverão ser compatíveis com a espécie, sexo, idade, marcação e código de marcação do animal.",
+    "item-comment": "Apoia-se o reconhecimento da nota fiscal original ou eletrônica como comprovante de origem regular para espécimes adquiridos antes de 15/01/2015, resguardando a segurança jurídica e o ato jurídico perfeito (LINDB, art. 30)."
+  },
+  {
+    "item-index": 47,
+    "item-original": "Art. 8º O criadouro comercial da fauna silvestre ou revendedor de animais vivos, no momento da venda do animal fica obrigado a fornecer ao comprador Manual de Guarda Responsável, no qual conste, minimamente:",
+    "item-comment": "Apoia-se a obrigatoriedade de entrega do Manual de Guarda Responsável no ato da venda, desde que seu conteúdo (incisos IV, V, VI, XII e XIII) seja atualizado conforme os ajustes propostos aos arts. 7º, 9º, 10 e ao Anexo II."
+  },
+  {
+    "item-index": 48,
+    "item-original": "I - nome científico e vulgar da espécie nativa;",
+    "item-comment": "A inclusão do nome científico e vulgar no Manual de Guarda Responsável é adequada e deve corresponder à taxonomia oficial adotada na nota técnica e no Anexo I."
+  },
+  {
+    "item-index": 49,
+    "item-original": "II - longevidade, tamanho e pesos máximos atingidos;",
+    "item-comment": "A informação sobre longevidade, tamanho e peso máximos no Manual deve utilizar exatamente as mesmas referências biométricas oficiais publicadas pelo Ibama para definição do tamanho do recinto (proposta de arts. 9º-A e 9º-B)."
+  },
+  {
+    "item-index": 50,
+    "item-original": "III - condições adequadas de manutenção (dieta, abrigo, exercício, repouso, aspectos sanitários das instalações, cuidados de trato e manejo);",
+    "item-comment": "As orientações sobre dieta, abrigo e manejo no Manual devem observar o hábito ecológico e o ambiente natural da espécie (terrestre, árido, arborícola, semiaquático), em consonância com a revisão proposta ao art. 9º e Anexo II."
+  },
+  {
+    "item-index": 51,
+    "item-original": "IV - tamanhos mínimos e condições de recintos segundo as normativas vigentes;",
+    "item-comment": "A informação sobre tamanhos mínimos de recintos no Manual depende da prévia revisão do Anexo II (proposta de arts. 9º-A a 9º-D), corrigindo as omissões biométricas, sobreposições de faixas e desproporções dimensionais."
+  },
+  {
+    "item-index": 52,
+    "item-original": "V - principais riscos à saúde humana e ambiental, observando o princípio de “Uma só Saúde”;",
+    "item-comment": "A abordagem de 'Uma só Saúde' no Manual reforça a necessidade de protocolos sanitários e de biossegurança (como o proposto art. 16-A para anfíbios e quarentena contra quitridiomicose), prevenindo riscos sanitários sem recorrer a proibições genéricas sem avaliação técnica."
+  },
+  {
+    "item-index": 53,
+    "item-original": "VI - necessidade de, pelo menos uma vez ao ano, ter acompanhamento Médico Veterinário;",
+    "item-comment": "A recomendação de acompanhamento médico-veterinário anual é positiva para o bem-estar preventivo, devendo alinhar-se à avaliação clínica realizada por profissional habilitado prevista no modelo de vistoria técnica do art. 9º, § 9º."
+  },
+  {
+    "item-index": 54,
+    "item-original": "VII - características comportamentais;",
+    "item-comment": "O detalhamento das características comportamentais no Manual é fundamental para orientar o enriquecimento ambiental e a estratificação vertical conforme o hábito da espécie (art. 9º-B)."
+  },
+  {
+    "item-index": 55,
+    "item-original": "VIII - informações sobre os deveres da guarda responsável;",
+    "item-comment": "As informações sobre guarda responsável devem destacar a proibição de abandono/soltura e o direito de devolução ao empreendimento de origem com registro no sistema oficial."
+  },
+  {
+    "item-index": 56,
+    "item-original": "IX - obrigatoriedade de acompanhamento do Certificado de Origem;",
+    "item-comment": "O Manual deve esclarecer que o Certificado de Origem eletrônico (art. 7º, § 2º) acompanha o animal e serve como autorização válida para transporte nacional."
+  },
+  {
+    "item-index": 57,
+    "item-original": "X - garantia de recebimento do animal por parte do empreendimento em caso de desistência de sua criação;",
+    "item-comment": "Apoia-se expressamente a garantia de recebimento do animal pelo empreendimento em caso de desistência (art. 8º, X), pois reduz o risco de abandono na natureza (Alves et al., 2019). Propõe-se complementar a norma para exigir que esse recebimento seja obrigatoriamente registrado no sistema oficial, permitindo auditar o destino de cada espécime."
+  },
+  {
+    "item-index": 58,
+    "item-original": "XI - informação quanto a proibição da soltura dos animais na natureza;",
+    "item-comment": "Apoia-se a informação clara quanto à proibição legal de soltura na natureza, essencial para evitar impactos ecológicos, disseminação de patógenos e hibridação entre populações (Passos & Fernandes, 2008; Pistoni & Toledo, 2010)."
+  },
+  {
+    "item-index": 59,
+    "item-original": "XII - vedação à reprodução e outros fins que não para animal de estimação em ambiente doméstico;",
+    "item-comment": "A vedação à reprodução em ambiente doméstico é adequada e deve ser articulada com o controle auditável dos criadouros comerciais (art. 7º-A) e com o direito de devolução ao criadouro (art. 8º, X)."
+  },
+  {
+    "item-index": 60,
+    "item-original": "XIII - informações sobre transporte do animal de estimação no país; e",
+    "item-comment": "As informações sobre transporte no Manual devem refletir a redação proposta para o art. 7º, § 2º, esclarecendo que o Certificado de Origem com animal marcado e endereço atualizado autoriza o transporte no território nacional."
+  },
+  {
+    "item-index": 61,
+    "item-original": "XIV - cópia dos artigos 10 e 11 desta norma, dos artigos 29 e 32 da Lei nº 9.605/98, além dos artigos 24 e 29 do Decreto nº 6.514/08.",
+    "item-comment": "A disponibilização dos dispositivos normativos no Manual deve incorporar as redações revisadas dos arts. 10 e 11 propostas na Manifestação Técnico-Científica, garantindo clareza jurídica ao adquirente."
+  },
+  {
+    "item-index": 62,
+    "item-original": "Art. 9º Fica estabelecido no anexo II dessa Instrução Normativa as condições mínimas de recinto necessárias, considerando o bem-estar, para a manutenção das espécies silvestres como animais de estimação.",
+    "item-comment": "O art. 9º e o Anexo II carecem de definição biométrica (comprimento total, rostro-cloacal ou de carapaça), diferenciação por hábito ecológico e estágio de vida, e coerência com a IN Ibama nº 7/2015. Propõe-se inserir os arts. 9º-A a 9º-D fixando: (i) a medida biométrica por grupo; (ii) a diferenciação por hábito e estágio de vida com publicação da faixa por espécie; (iii) extensão corporal completa e gradiente térmico com abrigo para répteis; e (iv) coeficientes proporcionais em nota técnica (mínimo de 1x o comprimento total para serpentes, conforme Warwick et al., 2021)."
+  },
+  {
+    "item-index": 63,
+    "item-original": "§1º As gaiolas e demais recintos para aves deverão possuir poleiros de madeira de diferentes diâmetros e localizados de forma a não impedir o voo dos animais.",
+    "item-comment": "A exigência de poleiros de madeira de diferentes diâmetros sem obstruir o voo é tecnicamente adequada, devendo ser complementada pela revisão das dimensões mínimas de gaiolas e viveiros no Anexo II (art. 9º-D)."
+  },
+  {
+    "item-index": 64,
+    "item-original": "§2º Animais arborícolas ou semi-arborícolas deverão dispor de recintos com estratigrafia vertical que lhes possibilite desempenhar seu comportamento natural.",
+    "item-comment": "Embora o § 2º exija estratificação vertical para animais arborícolas e semiarborícolas, o Anexo II fixa exatamente a mesma altura para todos os répteis da mesma faixa de tamanho, ignorando o hábito terrestre de espécies como Epicrates crassus (Pizzatto et al., 2006). Propõe-se o art. 9º-B e 9º-C para que altura e complexidade vertical sejam exigidas proporcionalmente ao uso arbóreo da espécie."
+  },
+  {
+    "item-index": 65,
+    "item-original": "§3º Animais ectotérmicos deverão possuir à sua disposição gradiente térmico para que possam se posicionar de acordo com suas necessidades fisiológicas.",
+    "item-comment": "Apoia-se a exigência de gradiente térmico para ectotérmicos, recomendando-se explicitar (conforme proposta de art. 9º-C) que o recinto deve oferecer abrigos tanto na porção quente quanto na porção fria, além de permitir a extensão corporal completa do animal."
+  },
+  {
+    "item-index": 66,
+    "item-original": "§4º Todos os animais deverão possuir condições de se proteger contra intempéries e esta condição não pode privá-los de acesso à luz solar ou de substitutivo artificial cientificamente comprovado como eficaz.",
+    "item-comment": "A exigência de proteção contra intempéries sem privação de luz solar ou radiação artificial comprovada é tecnicamente embasada e alinha-se às boas práticas de manejo (De la Fuente et al., 2023)."
+  },
+  {
+    "item-index": 67,
+    "item-original": "§5º Os recintos, exceto gaiolas, deverão possuir dispositivo de segurança que impeça a fuga dos animais.",
+    "item-comment": "Dispositivos antifuga são importantes para mitigar riscos de escape e introdução ambiental (Critério da Resolução Conama nº 394/2007), devendo ser considerados na avaliação técnica das espécies atualmente excluídas do Anexo I."
+  },
+  {
+    "item-index": 68,
+    "item-original": "§6º Água limpa para dessedentação deverá estar sempre disponível e a alimentação deverá ser disponibilizada em quantidade e qualidade necessárias à manutenção de um bom score corporal, atendendo aos requisitos nutricionais da espécie.",
+    "item-comment": "A disponibilidade permanente de água limpa para dessedentação e alimentação adequada ao escore corporal são parâmetros essenciais e objetivos de bem-estar, devendo permanecer obrigatórios inclusive durante o período de transição (proposta de art. 13, parágrafo único)."
+  },
+  {
+    "item-index": 69,
+    "item-original": "§7º Todas as gaiolas, terrários, viveiros ou recintos deverão dispor de banheira ou lâmina d'água limpa que possibilite banho ao animal, quando ele assim o desejar sendo que, em gaiolas e viveiros, ela não deverá estar localizada sob os poleiros.",
+    "item-comment": "A exigência genérica de banheira ou lâmina d'água para banho em todos os recintos contraria o art. 2º, XIV e XV (que reserva ambiente aquático ao paludário de animais semiaquáticos) e prejudica répteis terrestres de ambientes áridos que requerem baixa umidade (De la Fuente et al., 2023). Propõe-se alterar o § 7º para: '§ 7º Banheira, lâmina d’água ou área aquática serão exigidas conforme o hábito e o ambiente natural da espécie, na forma da nota técnica do art. 9º-D, sem prejuízo da água para beber prevista no § 6º. Em gaiolas e viveiros, não ficarão sob os poleiros.'"
+  },
+  {
+    "item-index": 70,
+    "item-original": "§8º Ficam vedados a exposição e passeios públicos de espécimes da fauna silvestre mantidos como animais de estimação, estando igualmente vedados quaisquer usos que envolvam finalidades diversas da estimação.",
+    "item-comment": "A vedação a passeios públicos e exposições é compatível com a finalidade exclusiva de cativeiro domiciliar, devendo apenas ressalvar o deslocamento para atendimento veterinário ou transporte regular amparado pelo Certificado de Origem (art. 7º, § 2º)."
+  },
+  {
+    "item-index": 71,
+    "item-original": "§9º A ausência de algum dos fatores previstos neste artigo implicará em maus-tratos, podendo o mantenedor do animal ser responsabilizado e ter o animal apreendido.",
+    "item-comment": "Equiparar automaticamente qualquer falha de parâmetro dimensional a crime de maus-tratos (Lei nº 9.605/1998, art. 32), sem avaliação clínica ou comportamental do animal, viola a ciência do bem-estar animal (Modelo dos Cinco Domínios, Mellor et al., 2020) e o princípio da proporcionalidade (Lei nº 9.784/1999, art. 2º). Propõe-se nova redação ao § 9º estabelecendo vistoria técnica em três níveis: (I) notificação para adequação em caso de não conformidade corrigível; (II) medida preventiva imediata diante de risco concreto; e (III) providências administrativas e penais apenas quando constatados indícios efetivos de maus-tratos no animal."
+  },
+  {
+    "item-index": 72,
+    "item-original": "Art. 10. Fica vedada a exposição, divulgação ou veiculação de imagens e vídeos de espécimes da fauna silvestre nativa mantidos em cativeiro, em redes sociais, plataformas digitais ou quaisquer outros meios de comunicação, quando os animais estiverem submetidos a situações que caracterizem maus-tratos, abuso ou condições incompatíveis com seu bem-estar ou descaracterizem o comportamento natural da espécie, assim como o uso do animal com objetivo comercial ou de monetização.",
+    "item-comment": "A proibição irrestrita ao 'uso do animal com objetivo comercial ou de monetização' alcança indevidamente conteúdos educativos, científicos, veterinários e a divulgação institucional regular de criadouros legalmente autorizados. Propõe-se acrescentar parágrafo único ao art. 10: 'Parágrafo único. Não se incluem na vedação deste artigo os conteúdos de caráter educativo, científico, veterinário ou institucional, nem a divulgação comercial regular de criadouros autorizados, desde que não submetam o animal às situações descritas no caput.'"
+  },
+  {
+    "item-index": 75,
+    "item-original": "Art. 11. Os criadores comerciais com finalidade de animal de estimação e revendedores de animais autorizados, que possuam em seu plantel espécies que não constam no anexo I, terão o prazo de 180 (centro e oitenta) dias para alienarem os espécimes.",
+    "item-comment": "O prazo de 180 dias para alienação de todo o plantel de espécies não incluídas no Anexo I é insuficiente e ignora a sazonalidade reprodutiva, gerando oferta forçada simultânea ao fechamento do mercado legal (§ 4º), em desacordo com o art. 3º, § 3º da Resolução Conama nº 394/2007. Propõe-se alterar o caput do art. 11 para fixar prazo de alienação não inferior a 12 meses, abrangendo um ciclo reprodutivo anual completo, aplicável apenas após decisão fundamentada de exclusão (art. 3º-A)."
+  },
+  {
+    "item-index": 76,
+    "item-original": "§1º A autoridade ambiental competente responsável pelo depósito de espécimes nativas não constantes no anexo I desta Instrução Normativa deverá transferir os animais a outro empreendimento devidamente autorizado para a espécie, desde que o objetivo não seja sua comercialização, ou destiná-los a um Cetras/Cetas.",
+    "item-comment": "A redação do § 1º não define com clareza quem custeará e executará a transferência dos animais, nem apresenta diagnóstico da capacidade dos Cetas/Cetras, que já operam sobrecarregados na maioria dos estados (Fonseca et al., 2021). Propõe-se especificar o responsável pela transferência e publicar previamente a capacidade operacional de recebimento dos Cetas/Cetras."
+  },
+  {
+    "item-index": 77,
+    "item-original": "§2º Dentro do prazo previsto no caput, em caso de animal comprado de outros empreendimentos devidamente autorizados ou nascido no próprio criadouro, o empreendimento poderá proceder à última venda do espécime.",
+    "item-comment": "A permissão de última venda dentro do prazo de transição deve abranger também os filhotes nascidos de gestações ou posturas já em curso antes da publicação da norma (proposta de §§ 5º-A e 5º-B), dentro do prazo ampliado de pelo menos 12 meses."
+  },
+  {
+    "item-index": 78,
+    "item-original": "§3º Empreendimentos com plantel significativo que não sejam passíveis de serem destinados de acordo com os parágrafos anteriores, dentro do prazo previsto no caput, deverão apresentar projeto de descomissionamento, a ser aprovado pelo órgão ambiental competente.",
+    "item-comment": "A previsão de projeto de descomissionamento para plantéis significativos confirma a inviabilidade de absorção pelos Cetas/Cetras e reforça a necessidade de preservar os criadouros autorizados durante a avaliação individualizada das espécies (proposta de art. 3º-A)."
+  },
+  {
+    "item-index": 79,
+    "item-original": "§4º Após o prazo expirado, o empreendimento poderá alienar os espécimes de espécies não listadas no anexo I apenas para empreendimentos autorizados, sendo proibida a alienação para criadores comerciais com finalidade de estimação, revendedores de animais e pessoa física.",
+    "item-comment": "Restringir a alienação após o prazo expirado apenas a empreendimentos autorizados elimina a demanda legal justamente quando o criador é obrigado a encerrar o plantel, incentivando o descarte irregular ou o mercado clandestino. Esse efeito confirma a necessidade de ampliar o prazo de venda para no mínimo 12 meses e regularizar os filhotes de gestações em curso."
+  },
+  {
+    "item-index": 80,
+    "item-original": "§5º O criador comercial com a finalidade de animal de estimação terá o prazo de 90 dias para cessar toda a reprodução de espécimes de espécies não constantes no anexo I, após a publicação desta Instrução Normativa.",
+    "item-comment": "É biologicamente impossível 'cessar toda a reprodução' em 90 dias em espécies vivíparas ou com estocagem de esperma (como serpentes Boidae, cuja gestação dura cerca de 3,5 meses após a cópula; Pizzatto, 2006; Lourdais et al., 2004). Propõe-se substituir o § 5º por: '§ 5º O criador comercial com finalidade de animal de estimação deverá cessar imediatamente a formação de novos pareamentos de espécimes de espécies não constantes do Anexo I', inserindo os §§ 5º-A e 5º-B para declarar gestações/posturas em curso em até 30 dias e permitir o registro e venda dos filhotes nascidos em até 12 meses."
+  },
+  {
+    "item-index": 81,
+    "item-original": "§6º No caso de espécies de mamíferos de grande porte, o prazo para o criador cessar toda a reprodução com finalidade de animal de estimação será de 365 dias, assim como o prazo para a alienação final dos espécimes reproduzidos.",
+    "item-comment": "A exceção de 365 dias concedida apenas a mamíferos de grande porte demonstra que o próprio Ibama reconhece a necessidade de respeitar ciclos reprodutivos longos, tratamento que deve ser estendido por isonomia e rigor biológico aos demais grupos (como serpentes vivíparas e espécies sazonais) mediante o prazo mínimo de 12 meses proposto no caput e nos §§ 5º-A e 5º-B."
+  },
+  {
+    "item-index": 82,
+    "item-original": "§7º Os animais adquiridos de criadouros autorizados, dentro dos prazos estabelecidos nos parágrafos anteriores desta publicação, serão considerados regulares desde que devidamente marcados e acompanhados da respectiva documentação de origem.",
+    "item-comment": "A regularidade dos espécimes adquiridos durante a transição deve abarcar expressamente os filhotes oriundos de gestações ou posturas iniciadas antes da cessação de pareamentos e devidamente declaradas ao órgão ambiental (proposta de §§ 5º-A e 5º-B)."
+  },
+  {
+    "item-index": 83,
+    "item-original": "Art. 12. O responsável pelo animal silvestre mantido em cativeiro domiciliar com a finalidade de animal de estimação, adquirido antes da publicação desta normativa, terá o prazo máximo de três anos para adequação ao disposto no art. 10 e no anexo II dessa instrução normativa.",
+    "item-comment": "Há erro material grave na remissão ao 'art. 10' (que trata de imagens e vídeos) em vez do art. 9º (condições de recinto). Ademais, os prazos de adequação só devem começar a correr após a publicação da revisão do Anexo II e da nota técnica de coeficientes (art. 9º-D), aplicando-se durante o período de transição a vistoria graduada do art. 9º, § 9º."
+  },
+  {
+    "item-index": 84,
+    "item-original": "I - prazo de um ano para adequação do recinto de um único espécime ou 1/3 de seu plantel;",
+    "item-comment": "Exigir em apenas 1 ano a construção de recintos desproporcionais como o viveiro de 10 metros de comprimento para quem já possui legalmente uma arara-canindé é materialmente inexequível em residências. O prazo de 1 ano do inciso I deve contar-se apenas após a revisão técnica dos parâmetros do Anexo II (proposta de arts. 9º-A a 9º-D)."
+  },
+  {
+    "item-index": 85,
+    "item-original": "II - prazo de dois anos para adequação do recinto do segundo espécime ou 2/3 de seu plantel; e",
+    "item-comment": "O prazo escalonado de 2 anos do inciso II deve ter como termo inicial a publicação dos parâmetros biométricos e dimensionais revisados do Anexo II, garantindo segurança jurídica aos mantenedores."
+  },
+  {
+    "item-index": 86,
+    "item-original": "III - prazo de três anos para finalização da adequação do recinto para todo o seu plantel.",
+    "item-comment": "O prazo final de 3 anos do inciso III deve ser contado a partir da publicação da nota técnica prevista no art. 9º-D, assegurando coerência entre a exigência física e a exequibilidade domiciliar."
+  },
+  {
+    "item-index": 87,
+    "item-original": "Art. 13. Pessoa física que possui guarda de espécime de espécie não constante no anexo I desta Instrução Normativa fica autorizada a manter o animal em cativeiro domiciliar até a morte do indivíduo, desde que possua documento que comprove sua origem, conforme art. 7º.",
+    "item-comment": "Apoia-se o reconhecimento do direito adquirido de manter até o óbito os espécimes legalmente adquiridos de espécies não incluídas no Anexo I, em respeito à segurança jurídica (LINDB, art. 30)."
+  },
+  {
+    "item-index": 88,
+    "item-original": "Parágrafo único. As condições de manutenção do espécime mantido em cativeiro domiciliar seguirão o disposto nesta norma.",
+    "item-comment": "Como o Anexo II contempla apenas aves e répteis, exigir que mamíferos, anfíbios e invertebrados mantidos legalmente (como nos estados de RJ, AL e PR) sigam 'o disposto nesta norma' cria obrigação sem parâmetro técnico e sujeita o tutor à presunção de maus-tratos. Propõe-se nova redação: 'Parágrafo único. As condições de manutenção seguirão o art. 9º. As dimensões do Anexo II valerão para os grupos nele previstos; para os demais, o órgão ambiental publicará parâmetros específicos, e até lá o animal poderá ser mantido nas condições atuais, desde que atendidos os §§ 3º a 6º do art. 9º.'"
+  },
+  {
+    "item-index": 89,
+    "item-original": "Art. 14. A obrigatoriedade de adequação disposta na Instrução Normativa Ibama nº 10/2011, que trata da transferência da categoria de criação amadora de passeriformes para a categoria de criação comercial, quando da publicação da lista de espécies nativas autorizadas para criação e comercialização para animal de estimação, conforme previsto na Resolução Conama nº 394, de 06 de novembro de 2007, apenas será efetivada mediante a padronização de dimensões e do código das anilhas de acordo com a Resolução Conama nº 487, de 15 de maio de 2018 e parametrização do SisFauna ou da Plataforma Nacional de Fauna.",
+    "item-comment": "A transição da criação amadora de passeriformes (IN Ibama nº 10/2011) para comercial depende da efetiva padronização das anilhas (Resolução Conama nº 487/2018) e parametrização do SisFauna/Plataforma Nacional de Fauna, devendo o Ibama publicar cronograma oficial e avaliação individualizada das espécies atualmente criadas nos estados."
+  },
+  {
+    "item-index": 92,
+    "item-original": "Art. 15. Ao Ibama cabe revisar, considerando o previsto na Resolução nº 394, de 06 de novembro de 2007 e os critérios técnico-científicos, a cada dois anos, a lista de espécies silvestres nativas a serem criadas e comercializadas como animais de estimação, sendo as demais atividades desenvolvidas de acordo com as atribuições das autoridades ambientais competentes conforme disposto na Lei Complementar nº 140, de 8 de dezembro de 2011.",
+    "item-comment": "A revisão periódica bienal atende ao art. 3º, § 2º da Resolução Conama nº 394/2007, mas deve ser precedida pela publicação imediata da nota técnica e dos critérios de triagem utilizados na elaboração da lista inicial, assegurando transparência metodológica e participação de especialistas (art. 3º, § 1º da Resolução Conama nº 394/2007)."
+  },
+  {
+    "item-index": 93,
+    "item-original": "Art. 16. O interessado na alteração da lista poderá apresentar ao Ibama solicitação para inclusão ou exclusão de espécies, devendo observar os quesitos mínimos elencados na Resolução Conama nº 394/2007, reservando ao Ibama a solicitação de complementação de informações quando entender necessário para deferimento ou não do pleito.",
+    "item-comment": "O art. 16 exige do interessado o atendimento aos critérios da Resolução Conama nº 394/2007, mas não fixa prazo de análise nem obriga a publicação do parecer técnico. Propõe-se acrescentar os §§ 1º a 3º ao art. 16 (estabelecendo dossiê técnico, prazo máximo de 180 dias prorrogável uma vez motivadamente, publicação do parecer e aplicação da mesma metodologia usada no Anexo I) e inserir o Art. 16-A exigindo protocolo técnico de biossegurança (quarentena, diagnóstico de quitridiomicose e rastreabilidade) antes da avaliação de anfíbios."
+  },
+  {
+    "item-index": 94,
+    "item-original": "Art. 17. Os casos omissos deverão ser submetidos à análise técnica da Diretoria de Biodiversidade e Florestas - DBFlo.",
+    "item-comment": "Os casos omissos submetidos à DBFlo devem observar os princípios da motivação explícita, proporcionalidade e segurança jurídica (Lei nº 9.784/1999, arts. 2º e 50; LINDB, arts. 20 e 30), bem como as notas técnicas publicadas."
+  },
+  {
+    "item-index": 95,
+    "item-original": "Art. 18. Esta Instrução Normativa entra em vigor na data de sua publicação.",
+    "item-comment": "A entrada em vigor na data da publicação não pode ocorrer antes da disponibilização da nota técnica que fundamenta o Anexo I, da AIR (ou dispensa motivada) e da reabertura da consulta pública por no mínimo 45 dias (Decreto nº 10.411/2020, art. 9º, § 2º, II), sob pena de vício de motivação e violação ao rito regulatório."
+  },
+  {
+    "item-index": 99,
+    "item-original": "Classe: Aves Nº Ordem Espécies aprovadas Nome popular Diâmetro Interno da Anilha (mm) 1 Psittaciformes Pionopsittapileata cuiú-cuiú 5,5 2 Psittaciformes Pionusmaximiliani maitaca-verde 8,0 3 Psittaciformes Pionusmenstruus maitaca-de-cabeça-azul 8,0 4 Psittaciformes Amazona aestiva papagaio-verdadeiro Anilha 9,5 e registro fotográfico, conforme § 7º do Art. 6º da Resolução Conama 487/2018 5 Psittaciformes Amazona amazonica curica 9,5 6 Psittaciformes Forpusxanthopterygius tuim 3,2 7 Psittaciformes Pionites leucogaster marianinha-de-cabeça-amarela 7,5 8 Psittaciformes Pyrrhurapicta tiriba-de-testa-azul 4,5 9 Psittaciformes Epsittulaaurea periquito-rei 5,0 10 Psittaciformes Aratingajandaya jandaia-verdadeira 6,3 11 Psittaciformes Aratingaauricapillus jandaia-de-testa-vermelha 6,3 12 Psittaciformes Orthopsittacamanilatus maracanã-do-buriti - 13 Psittaciformes Primoliusmaracana maracanã 7,5 14 Psittaciformes Ara ararauna arara-canindé 13,5 15 Psittaciformes Diopsittacanobilis maracanã-pequena 7,0 16 Psittaciformes Psittacaraleucophthalmus periquitão 7,0 17 Passeriformes Turdusflavipes sabiá-una 4,0 18 Passeriformes Turdus leucomelas sabiá-barranco 4,0 19 Passeriformes Turdusfumigatus sabiá-da-mata 4,0 20 Passeriformes Turdusrufiventris sabiá-laranjeira 4,0 21 Passeriformes Turdusamaurochalinus sabiá-poca 4,0 22 Passeriformes Turdus albicollis sabiá-coleira 4,0 23 Passeriformes Mimus saturninus sabiá-do-campo 4,0 24 Passeriformes Spinusmagellanicus pintassilgo 2,4 25 Passeriformes Zonotrichia capensis tico-tico 2,4 26 Passeriformes Icterusjamacaii corrupião 4,0 27 Passeriformes Molothrusoryzivorus iraúna-grande 4,0 28 Passeriformes Agelasticusthilius sargento 3,0 29 Passeriformes Cyanoloxiaglaucocaerulea azulinho 2,6 30 Passeriformes Cyanoloxiabrissonii azulão 2,8 31 Passeriformes Saltatormaximus tempera-viola 3,2 32 Passeriformes Saltator similis trinca-ferro 3,5 33 Passeriformes Saltatorfuliginosus bico-de-pimenta 4,0 34 Passeriformes Volatinia jacarina tiziu 2,0 35 Passeriformes Coryphospinguspileatus tico-tico-rei-cinza 2,5 36 Passeriformes Coryphospingus cucullatus tico-tico-rei 2,5 37 Passeriformes Tachyphonuscoronatus tiê-preto 3,0 38 Passeriformes Ramphocelusbresilia tiê-sangue 3,2 39 Passeriformes Sporophilaplumbea patativa 2,4 40 Passeriformes Sporophilacollaris coleiro-do-brejo 2,4 41 Passeriformes Sporophilanigricollis baiano 2,2 42 Passeriformes Sporophilacaerulescens coleirinho 2,2 43 Passeriformes Sporophilaleucoptera chorão 2,5 44 Passeriformes Sporophilaangolensis curió 2,5 45 Passeriformes Sporophilamaximiliani bicudo 3,0 46 Passeriformes Haplospiza unicolor cigarra-bambu 2,4 47 Passeriformes Stephanophorusdiadematus sanhaço-frade 3,2 48 Passeriformes Schistochlamysmelanopis sanhaço-de-coleira 3,2 49 Passeriformes Schistochlamysruficapillus bico-de-veludo 3,2 50 Passeriformes Thraupissayaca sanhaço-cinzento 2,8 51 Passeriformes Tangara seledon saíra-sete-cores 2,6 Classe: Reptilia Nº Ordem Espécies aprovadas Nome popular Marcação 52 Squamata Epicratescrassus jiboia-arco-íris Transponder e registro fotográfico, conforme § 7º do Art. 6º da Resolução Conama 487/2018",
+    "item-comment": "O Anexo I restringe-se arbitrariamente a 51 aves e 1 único réptil (Epicrates crassus), sem apresentar nota técnica que demonstre a aplicação dos nove critérios da Resolução Conama nº 394/2007. Exclui sem justificativa espécies nativas amplamente comercializadas com origem legal segundo o próprio Ibama (como Trachemys dorbigni, Chelonoidis carbonaria e Sicalis flaveola — 39% das vendas de nativas de estimação; Trajano & Carneiro, 2019), espécies admitidas em legislações estaduais (ES, MG, PE, RJ, AL, PR), congêneres próximas de biologia documentada (Epicrates assisi, E. cenchria e E. maurus) e grupos inteiros como anfíbios e invertebrados. Solicita-se a publicação da avaliação individualizada de cada espécie e a inclusão do art. 3º-A e do art. 16-A."
+  },
+  {
+    "item-index": 102,
+    "item-original": "# Classe de animal Tamanho do animal (cm) Tipo de recinto Dimensões dos recintos Altura (cm) Largura (cm) Comprimento (cm) 1 Aves Até 15 Gaiola 45 30 57cm 2 Aves > 15 a 21 Gaiola 55 40 90cm 3 Aves > 21 adiante Gaiola 65 50 104cm 4 Aves > 30 a 65 Viveiro 135 90 225 5 Aves > 65 a 100 Viveiro 220 200 1000 6 Répteis Até 10 Terrário ou paludário1 30 25 50 7 Répteis > 10 a 20 Terrário ou paludário 1 60 45 100 8 Répteis > 20 a 30 Terrário ou paludário 1 75 50 125 9 Répteis > 30 a 100 Terrário ou paludário 1 100 75 200 10 Répteis > 100 a 200 Terrário ou paludário 1 115 100 300 11 Répteis > 200 a 301 Terrário ou paludário 1 130 115 400 12 Répteis Acima de 301 Terrário ou paludário 1 145 130 500",
+    "item-comment": "O Anexo II apresenta graves inconsistências técnicas: (i) não define qual medida biométrica usar (comprimento total, rostro-cloacal ou da carapaça); (ii) contém sobreposição nas faixas de aves ('> 21 adiante' vs. '> 30 a 65') e salto desproporcional para viveiro de 10 m de comprimento acima de 65 cm (4x a área por ave de zoológicos na IN Ibama nº 7/2015); (iii) ignora o hábito ecológico (arborícola, terrestre, escavador, semiaquático) e o estágio de vida; (iv) traz a nota de rodapé '1' em 'paludário' sem texto correspondente; e (v) omite dimensões para mamíferos, anfíbios e invertebrados. Propõe-se revisar o Anexo II conforme os arts. 9º-A a 9º-D."
+  },
+  {
+    "item-index": 105,
+    "item-original": "Ministério do Meio Ambiente Instituto Brasileiro do Meio Ambiente e dos Recursos Renováveis Diretoria de Fauna e Recursos Pesqueiros Coordenação Geral de Fauna Termo de Transferência CRIADOURO DE ORIGEM Criadouro: CNPJ: Número do CTF: Telefone: Endereço: Bairro: Município/UF: CEP: PROPRIETÁRIO DO ANIMAL Nome: CPF: Endereço: Bairro: Município/UF: CEP: NOVO PROPRIETÁRIO Nome: CPF: Endereço: Bairro: Município/UF: CEP:",
+    "item-comment": "Em consonância com a proposta de alteração do art. 7º, § 3º, o Anexo III (Termo de Transferência) deve ser convertido em formulário eletrônico integrado ao SisFauna/sistema oficial de gestão de fauna, substituindo a exigência física de registro em cartório e reconhecimento de firma (dispensado pela Lei nº 13.726/2018, art. 3º, I)."
+  },
+  {
+    "item-index": 106,
+    "item-original": "ANIMAIS TRANFERIDOS Certificado de Origem Nº Nota fiscal Código de Marcação Nome científico Nome Comum Sexo Nascimento",
+    "item-comment": "Recomenda-se corrigir a grafia do cabeçalho ('ANIMAIS TRANSFERIDOS') e integrar os campos de Certificado de Origem, código de marcação e identificação do espécime diretamente ao fluxo eletrônico do sistema oficial (proposta de art. 7º, § 3º)."
+  },
+  {
+    "item-index": 107,
+    "item-original": "Local, ______de______________de ________.",
+    "item-comment": "Na versão eletrônica do Termo de Transferência no sistema oficial (proposta de art. 7º, § 3º), a data e o local são registrados automaticamente pelo log de transação digital, dispensando preenchimento manual em papel."
+  },
+  {
+    "item-index": 109,
+    "item-original": "assinatura do proprietário/representante legal",
+    "item-comment": "Conforme proposto para o art. 7º, § 3º e nos termos da Lei nº 13.726/2018 (art. 3º, I), a assinatura do proprietário cedente deve ser realizada por assinatura eletrônica no sistema oficial (ex.: Gov.br), dispensando reconhecimento de firma em cartório."
+  },
+  {
+    "item-index": 111,
+    "item-original": "assinatura do novo proprietário/representante legal",
+    "item-comment": "Da mesma forma, a assinatura do novo proprietário adquirente deve ocorrer eletronicamente no sistema oficial de gestão de fauna, garantindo rastreabilidade imediata e atualização automática do endereço do cativeiro domiciliar (art. 7º, §§ 1º e 3º)."
+  }
+]

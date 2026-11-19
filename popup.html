@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      width: 290px;
+      margin: 0;
+      padding: 14px;
+      background: #0f172a;
+      color: #f8fafc;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 12.5px;
+    }
+    h1 {
+      margin: 0 0 8px 0;
+      font-size: 14px;
+      color: #34d399;
+    }
+    p {
+      margin: 0 0 10px 0;
+      color: #cbd5e1;
+      line-height: 1.4;
+    }
+    .status-box {
+      background: #1e293b;
+      padding: 8px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      color: #93c5fd;
+      font-size: 12px;
+    }
+    button {
+      width: 100%;
+      padding: 8px 10px;
+      border: none;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-bottom: 6px;
+      font-size: 12px;
+    }
+    #btn-open-page {
+      background: #0f766e;
+      color: #fff;
+    }
+    #btn-show-panel {
+      background: #10b981;
+      color: #06281e;
+    }
+  </style>
+</head>
+<body>
+  <h1>Consulta Pública IBAMA</h1>
+  <p>Extensão para envio automatizado das contribuições na minuta da Portaria Ibama nº 214/2026.</p>
+  <div id="status-box" class="status-box">Verificando aba atual...</div>
+  <button id="btn-show-panel">Mostrar / Expandir Painel na Aba</button>
+  <button id="btn-open-page">Abrir Página da Consulta</button>
+  <script src="popup.js"></script>
+</body>
+</html>
