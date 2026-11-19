@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Brasil Participativo — Automação Consulta IBAMA",
-  "version": "1.0.0",
-  "description": "Automatiza o envio de contribuições técnico-científicas na consulta pública da Portaria Ibama nº 214/2026 no Brasil Participativo.",
+  "version": "1.1.0",
+  "description": "Automatiza o envio de contribuições na consulta pública da Portaria Ibama nº 214/2026 no Brasil Participativo.",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -18,8 +18,7 @@
     }
   },
   "permissions": [
-    "activeTab",
-    "scripting"
+    "activeTab"
   ],
   "host_permissions": [
     "https://brasilparticipativo.presidencia.gov.br/*"
@@ -33,16 +32,6 @@
         "content.js"
       ],
       "run_at": "document_idle"
-    }
-  ],
-  "web_accessible_resources": [
-    {
-      "resources": [
-        "data/comentarios_portaria214.json"
-      ],
-      "matches": [
-        "https://brasilparticipativo.presidencia.gov.br/*"
-      ]
     }
   ]
 }

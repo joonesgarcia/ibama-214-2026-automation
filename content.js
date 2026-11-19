@@ -1,6 +1,7 @@
 (() => {
   if (window.__BP_AUTO_COMMENTER__) {
-    return;
+    document.getElementById('bp-control-panel')?.remove();
+    document.getElementById('bp-iframe-wrapper')?.remove();
   }
 
   class BrasilParticipativoCommenter {
@@ -9,19 +10,15 @@
       this.items = [];
       this.isRunning = false;
       this.isPaused = false;
-      this.dryRun = true;
+      this.dryRun = false; // Inicializado DESATIVADO (OFF)
       this.delayMs = 4000;
-      this.startFromIndex = 1;
       this.iframeMinimized = false;
-      this.iframeHidden = false;
-      this.panelMinimized = false;
       this.progress = this.loadProgress();
 
+      this.injectStyles();
       this.createFrameWrapper();
       this.mountUI();
       this.registerExtensionMessages();
-      // Auto-load bundled default dataset for immediate 1-click readiness
-      this.loadDefaultDataset(true);
     }
 
     registerExtensionMessages() {
@@ -31,7 +28,6 @@
             const panel = document.getElementById('bp-control-panel');
             if (panel) {
               panel.style.display = 'block';
-              this.setPanelMinimized(false);
             }
             sendResponse({ ok: true });
           } else if (msg?.action === 'GET_STATUS') {
@@ -48,21 +44,52 @@
       }
     }
 
-    async loadDefaultDataset(silent = false) {
-      try {
-        const url = chrome.runtime.getURL('data/comentarios_portaria214.json');
-        const res = await fetch(url);
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const parsed = await res.json();
-        if (!Array.isArray(parsed)) throw new Error('Formato inválido no JSON padrão.');
-        this.items = parsed;
-        this.updateStats();
-        this.log(`Base padrão carregada: ${parsed.length} itens (Portaria Ibama nº 214/2026).`);
-      } catch (err) {
-        if (!silent) {
-          alert('Não foi possível carregar o JSON padrão: ' + err.message);
+    injectStyles() {
+      if (document.getElementById('bp-qa-styles')) return;
+      const style = document.createElement('style');
+      style.id = 'bp-qa-styles';
+      style.textContent = `
+        @keyframes bp-shine-pulse {
+          0% {
+            box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.75);
+            transform: scale(1);
+          }
+          50% {
+            box-shadow: 0 0 18px 6px rgba(16, 185, 129, 0.65);
+            transform: scale(1.015);
+          }
+          100% {
+            box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+            transform: scale(1);
+          }
         }
-      }
+        #bp-control-panel .bp-btn {
+          width: 100%;
+          display: block;
+          padding: 13px 16px;
+          font-size: 15px;
+          font-weight: 700;
+          border-radius: 8px;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.15s ease, opacity 0.15s ease;
+          text-align: center;
+          box-sizing: border-box;
+        }
+        #bp-control-panel .bp-btn:hover:not(:disabled) {
+          filter: brightness(0.95);
+        }
+        #bp-control-panel .bp-btn:disabled {
+          opacity: 0.45;
+          cursor: not-allowed;
+        }
+        #bp-control-panel .bp-start-ready {
+          background: #10b981 !important;
+          color: #ffffff !important;
+          animation: bp-shine-pulse 1.6s infinite ease-in-out;
+        }
+      `;
+      document.head.appendChild(style);
     }
 
     loadProgress() {
@@ -77,36 +104,15 @@
       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(this.progress));
     }
 
-    resetProgress() {
-      this.progress = {};
-      localStorage.removeItem(this.STORAGE_KEY);
-      this.updateStats();
-      this.log('Progresso limpo.');
-    }
-
-    buildDomLinkMap() {
-      const map = new Map();
-      document.querySelectorAll('li.participatory-text-item').forEach((li) => {
-        const idxEl = li.querySelector('.participatory-text-index');
-        const linkEl = li.querySelector('a.item-comments-redirect');
-        if (idxEl && linkEl) {
-          const idx = parseInt(idxEl.textContent.trim(), 10);
-          const url = new URL(linkEl.getAttribute('href'), window.location.origin).href;
-          map.set(idx, { url, element: li });
-        }
-      });
-      return map;
-    }
-
     createFrameWrapper() {
       const wrapper = document.createElement('div');
       wrapper.id = 'bp-iframe-wrapper';
       wrapper.style.cssText = [
         'position:fixed',
-        'bottom:16px',
-        'left:16px',
+        'bottom:20px',
+        'left:20px',
         'width:760px',
-        'max-width:calc(100vw - 410px)',
+        'max-width:calc(100vw - 450px)',
         'background:#0f172a',
         'border:2px solid #0f766e',
         'border-radius:10px',
@@ -117,14 +123,10 @@
       ].join(';');
 
       wrapper.innerHTML = `
-        <div id="bp-iframe-header" style="display:flex;justify-content:space-between;align-items:center;padding:6px 10px;background:#0f766e;color:#fff;font-size:12px;font-weight:600;user-select:none;">
+        <div id="bp-iframe-header" style="display:flex;justify-content:space-between;align-items:center;padding:8px 12px;background:#0f766e;color:#fff;font-size:13px;font-weight:700;user-select:none;">
           <span id="bp-iframe-title">Visualizador da Subpágina</span>
-          <div style="display:flex;gap:6px;">
-            <button id="bp-iframe-min-btn" title="Minimizar/Expandir visualizador"
-              style="background:rgba(0,0,0,0.25);color:#fff;border:none;border-radius:4px;padding:2px 8px;cursor:pointer;font-weight:700;">—</button>
-            <button id="bp-iframe-hide-btn" title="Ocultar visualizador"
-              style="background:rgba(0,0,0,0.25);color:#fff;border:none;border-radius:4px;padding:2px 8px;cursor:pointer;">Ocultar</button>
-          </div>
+          <button id="bp-iframe-min-btn" title="Minimizar/Expandir visualizador"
+            style="background:rgba(0,0,0,0.25);color:#fff;border:none;border-radius:4px;padding:3px 10px;cursor:pointer;font-size:14px;font-weight:700;">—</button>
         </div>
         <iframe id="bp-worker-iframe" style="width:100%;height:540px;max-height:78vh;border:none;display:block;background:#fff;"></iframe>
       `;
@@ -135,12 +137,6 @@
 
       wrapper.querySelector('#bp-iframe-min-btn').addEventListener('click', () => {
         this.setIframeMinimized(!this.iframeMinimized);
-      });
-
-      wrapper.querySelector('#bp-iframe-hide-btn').addEventListener('click', () => {
-        this.setIframeHidden(true);
-        const chk = document.getElementById('bp-show-frame');
-        if (chk) chk.checked = false;
       });
     }
 
@@ -158,37 +154,18 @@
       }
     }
 
-    setIframeHidden(hidden) {
-      this.iframeHidden = hidden;
-      if (hidden) {
-        this.iframeWrapper.style.opacity = '0.01';
-        this.iframeWrapper.style.pointerEvents = 'none';
-        this.iframeWrapper.style.width = '10px';
-        this.iframeWrapper.style.height = '10px';
-      } else {
-        this.iframeWrapper.style.opacity = '1';
-        this.iframeWrapper.style.pointerEvents = 'auto';
-        this.iframeWrapper.style.height = 'auto';
-        this.setIframeMinimized(this.iframeMinimized);
-      }
-    }
-
-    setPanelMinimized(minimized) {
-      this.panelMinimized = minimized;
-      const body = document.getElementById('bp-panel-body');
-      const btn = document.getElementById('bp-panel-min-btn');
-      const panel = document.getElementById('bp-control-panel');
-      if (!body || !btn || !panel) return;
-
-      if (minimized) {
-        body.style.display = 'none';
-        panel.style.width = '290px';
-        btn.textContent = '+';
-      } else {
-        body.style.display = 'block';
-        panel.style.width = '365px';
-        btn.textContent = '—';
-      }
+    buildDomLinkMap() {
+      const map = new Map();
+      document.querySelectorAll('li.participatory-text-item').forEach((li) => {
+        const idxEl = li.querySelector('.participatory-text-index');
+        const linkEl = li.querySelector('a.item-comments-redirect');
+        if (idxEl && linkEl) {
+          const idx = parseInt(idxEl.textContent.trim(), 10);
+          const url = new URL(linkEl.getAttribute('href'), window.location.origin).href;
+          map.set(idx, { url, element: li });
+        }
+      });
+      return map;
     }
 
     loadUrlInFrame(url, timeoutMs = 25000) {
@@ -280,10 +257,7 @@
       ).href;
 
       if (this.dryRun) {
-        const gid = formData.get('comment[commentable_gid]') || '(sem gid)';
-        this.log(
-          `[SIMULAÇÃO] Índice ${entry['item-index']}: FormData pronto -> POST ${actionUrl} | GID ok (${gid.slice(0, 14)}...) | ${entry['item-comment'].length} chars.`
-        );
+        this.log(`[SIMULAÇÃO] Índice ${entry['item-index']}: validado (${entry['item-comment'].length} chars).`);
         return 'simulated';
       }
 
@@ -307,13 +281,13 @@
 
       if (!response.ok) {
         submitBtn.disabled = false;
-        throw new Error(`Servidor retornou HTTP ${response.status}: ${responseBody.slice(0, 180)}`);
+        throw new Error(`Servidor retornou HTTP ${response.status}: ${responseBody.slice(0, 160)}`);
       }
 
       try {
         win.eval(responseBody);
-      } catch (evalErr) {
-        console.warn('[BP-Bot] Aviso ao renderizar resposta JS no iframe:', evalErr);
+      } catch {
+        // Ignora erro de renderização visual no frame
       }
 
       textarea.value = '';
@@ -325,11 +299,16 @@
 
     async start() {
       if (!this.items.length) {
-        alert('Carregue um arquivo JSON ou clique em "Carregar Padrão".');
+        alert('Selecione primeiro o arquivo JSON de comentários.');
         return;
       }
+
+      const startBtn = document.getElementById('bp-start');
+      if (startBtn) startBtn.classList.remove('bp-start-ready');
+
       if (this.isRunning) {
         this.isPaused = false;
+        this.updateStats('Executando...');
         this.log('Execução retomada.');
         return;
       }
@@ -338,20 +317,18 @@
       this.isPaused = false;
       const domMap = this.buildDomLinkMap();
 
-      this.log(
-        `Iniciando a partir do índice ${this.startFromIndex} (Simulação: ${this.dryRun ? 'SIM' : 'NÃO'})...`
-      );
+      this.log(`Iniciando envio de ${this.items.length} comentários (Simulação: ${this.dryRun ? 'SIM' : 'NÃO'})...`);
 
       for (const entry of this.items) {
         if (!this.isRunning) break;
 
         while (this.isPaused && this.isRunning) {
+          this.updateStats('Pausado');
           await this.sleep(500);
         }
         if (!this.isRunning) break;
 
         const idx = entry['item-index'];
-        if (idx < this.startFromIndex) continue;
 
         if (!this.dryRun && this.progress[idx]?.status === 'submitted') {
           continue;
@@ -367,8 +344,9 @@
           mapped.element.style.outline = '2px solid #0f766e';
         }
 
+        this.updateStats(`Processando item #${idx}...`);
+
         try {
-          this.log(`Processando índice ${idx} -> ${targetUrl}`);
           const status = await this.submitSingleItem(entry, targetUrl);
           this.progress[idx] = {
             status,
@@ -376,13 +354,12 @@
             timestamp: new Date().toISOString(),
           };
           this.saveProgress();
-          this.updateStats();
+          this.updateStats(`Item #${idx} concluído`);
           if (mapped?.element) {
             mapped.element.style.outline =
               status === 'submitted' ? '2px solid #16a34a' : '2px dashed #2563eb';
           }
         } catch (err) {
-          console.error(`[BP-Bot] Erro no índice ${idx}:`, err);
           this.progress[idx] = {
             status: 'error',
             error: err.message,
@@ -390,7 +367,7 @@
             timestamp: new Date().toISOString(),
           };
           this.saveProgress();
-          this.updateStats();
+          this.updateStats(`Erro no item #${idx}`);
           this.log(`ERRO no índice ${idx}: ${err.message}`);
           if (mapped?.element) {
             mapped.element.style.outline = '2px solid #dc2626';
@@ -401,17 +378,21 @@
       }
 
       this.isRunning = false;
+      this.updateStats('Finalizado');
       this.log('Fila finalizada.');
     }
 
     pause() {
+      if (!this.isRunning) return;
       this.isPaused = true;
+      this.updateStats('Pausado');
       this.log('Pausado.');
     }
 
     stop() {
       this.isRunning = false;
       this.isPaused = false;
+      this.updateStats('Interrompido');
       this.log('Interrompido pelo usuário.');
     }
 
@@ -437,7 +418,7 @@
       console.log(`[BP-Bot] ${msg}`);
     }
 
-    updateStats() {
+    updateStats(statusLabel = 'Aguardando') {
       const vals = Object.values(this.progress);
       const sent = vals.filter((v) => v.status === 'submitted').length;
       const sim = vals.filter((v) => v.status === 'simulated').length;
@@ -445,11 +426,10 @@
 
       const statsEl = document.getElementById('bp-stats');
       if (statsEl) {
-        statsEl.textContent = `Carregados: ${this.items.length} | Enviados: ${sent} | Simulados: ${sim} | Erros: ${err}`;
-      }
-      const miniBadge = document.getElementById('bp-mini-badge');
-      if (miniBadge) {
-        miniBadge.textContent = `(${sent}/${this.items.length})`;
+        statsEl.innerHTML = `
+          <div style="font-weight:700;color:#0f172a;margin-bottom:4px;">Status: ${statusLabel}</div>
+          <div>Carregados: <strong>${this.items.length}</strong> | Enviados: <strong style="color:#15803d;">${sent}</strong> | Simulados: <strong style="color:#1d4ed8;">${sim}</strong> | Erros: <strong style="color:#b91c1c;">${err}</strong></div>
+        `;
       }
     }
 
@@ -458,91 +438,88 @@
       panel.id = 'bp-control-panel';
       panel.style.cssText = [
         'position:fixed',
-        'bottom:16px',
-        'right:16px',
-        'width:365px',
-        'background:#0f172a',
-        'color:#f8fafc',
-        'padding:12px 14px',
-        'border-radius:10px',
-        'box-shadow:0 10px 25px rgba(0,0,0,0.45)',
+        'bottom:20px',
+        'right:20px',
+        'width:400px',
+        'max-width:calc(100vw - 40px)',
+        'background:#ffffff',
+        'color:#0f172a',
+        'padding:18px',
+        'border-radius:12px',
+        'border:1px solid #cbd5e1',
+        'box-shadow:0 12px 32px rgba(15, 23, 42, 0.22)',
         'z-index:99999',
         'font-family:system-ui,-apple-system,sans-serif',
-        'font-size:12px',
+        'font-size:14px',
+        'box-sizing:border-box',
       ].join(';');
 
       panel.innerHTML = `
-        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">
-          <div style="font-weight:700;font-size:13px;color:#34d399;">
-            Automação Consulta IBAMA <span id="bp-mini-badge" style="color:#93c5fd;font-weight:600;">(0/0)</span>
+        <div style="margin-bottom:14px;">
+          <div style="font-weight:700;font-size:15px;margin-bottom:8px;color:#0f172a;">
+            1. Carregar comentários.
           </div>
-          <button id="bp-panel-min-btn" title="Minimizar/Expandir painel"
-            style="background:#1e293b;color:#f8fafc;border:1px solid #475569;border-radius:4px;padding:2px 8px;cursor:pointer;font-weight:700;">—</button>
+          <input type="file" id="bp-json-file" accept=".json" style="display:none;" />
+          <button id="bp-pick-file" class="bp-btn" style="background:#2563eb;color:#ffffff;margin-bottom:6px;">
+            [ clique aqui ]
+          </button>
+          <div id="bp-file-name" style="font-size:13px;color:#64748b;text-align:center;">
+            nenhum arquivo carregado
+          </div>
         </div>
 
-        <div id="bp-panel-body" style="margin-top:10px;">
-          <div style="margin-bottom:8px;">
-            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
-              <span style="color:#cbd5e1;">1. Base de comentários:</span>
-              <button id="bp-load-default" style="background:#0f766e;color:#fff;border:none;padding:3px 8px;border-radius:4px;cursor:pointer;font-size:11px;font-weight:600;">
-                Carregar Padrão (88)
-              </button>
-            </div>
-            <input type="file" id="bp-json-file" accept=".json" style="width:100%;color:#e2e8f0;font-size:11px;" />
-          </div>
-          <div style="display:flex;gap:12px;align-items:center;margin-bottom:8px;">
-            <label style="cursor:pointer;">
-              <input type="checkbox" id="bp-dry-run" checked /> Modo Simulação
-            </label>
-            <label style="cursor:pointer;">
-              <input type="checkbox" id="bp-show-frame" checked /> Ver iframe
-            </label>
-          </div>
-          <div style="margin-bottom:8px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-            <label>Intervalo (ms):
-              <input type="number" id="bp-delay" value="4000" min="1500" step="500"
-                style="width:70px;padding:2px 4px;border-radius:4px;border:1px solid #475569;background:#1e293b;color:#fff;" />
-            </label>
-            <label>Início (índice):
-              <input type="number" id="bp-start-idx" value="1" min="1" step="1"
-                style="width:60px;padding:2px 4px;border-radius:4px;border:1px solid #475569;background:#1e293b;color:#fff;" />
-            </label>
-          </div>
-          <div id="bp-stats" style="margin-bottom:8px;padding:6px;background:#1e293b;border-radius:6px;color:#93c5fd;">
-            Carregados: 0 | Enviados: 0 | Simulados: 0 | Erros: 0
-          </div>
-          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
-            <button id="bp-start" style="background:#10b981;color:#06281e;font-weight:700;border:none;padding:6px 10px;border-radius:6px;cursor:pointer;">Iniciar</button>
-            <button id="bp-pause" style="background:#f59e0b;color:#1f1300;font-weight:700;border:none;padding:6px 10px;border-radius:6px;cursor:pointer;">Pausar</button>
-            <button id="bp-stop" style="background:#ef4444;color:#fff;font-weight:700;border:none;padding:6px 10px;border-radius:6px;cursor:pointer;">Parar</button>
-            <button id="bp-export" style="background:#3b82f6;color:#fff;border:none;padding:6px 8px;border-radius:6px;cursor:pointer;">Log</button>
-            <button id="bp-reset" style="background:#475569;color:#fff;border:none;padding:6px 8px;border-radius:6px;cursor:pointer;">Limpar</button>
-          </div>
-          <pre id="bp-log-box" style="height:110px;overflow-y:auto;background:#020617;color:#a7f3d0;padding:6px;border-radius:6px;margin:0;font-size:11px;white-space:pre-wrap;"></pre>
+        <label style="display:flex;align-items:center;gap:10px;padding:12px;margin-bottom:14px;background:#f8fafc;border:1px solid #cbd5e1;border-radius:8px;cursor:pointer;font-weight:700;font-size:14px;color:#0f172a;">
+          <input type="checkbox" id="bp-dry-run" style="width:18px;height:18px;cursor:pointer;" />
+          <span>MODO SIMULAÇÃO</span>
+        </label>
+
+        <div id="bp-stats" style="margin-bottom:14px;padding:12px;background:#f1f5f9;border:1px solid #cbd5e1;border-radius:8px;font-size:14px;color:#334155;"></div>
+
+        <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:14px;">
+          <button id="bp-start" class="bp-btn" style="background:#94a3b8;color:#ffffff;padding:16px;font-size:17px;letter-spacing:0.4px;" disabled>
+            INICIAR
+          </button>
+          <button id="bp-pause" class="bp-btn" style="background:#f59e0b;color:#ffffff;">
+            Pausar
+          </button>
+          <button id="bp-stop" class="bp-btn" style="background:#ef4444;color:#ffffff;">
+            Parar
+          </button>
+          <button id="bp-export" class="bp-btn" style="background:#334155;color:#ffffff;">
+            Exportar Logs
+          </button>
         </div>
+
+        <pre id="bp-log-box" style="height:115px;overflow-y:auto;background:#f8fafc;color:#1e293b;border:1px solid #cbd5e1;padding:10px;border-radius:8px;margin:0;font-size:12.5px;white-space:pre-wrap;"></pre>
       `;
 
       document.body.appendChild(panel);
-      this.updateStats();
+      this.updateStats('Aguardando arquivo');
 
-      document.getElementById('bp-panel-min-btn').addEventListener('click', () => {
-        this.setPanelMinimized(!this.panelMinimized);
-      });
+      const fileInput = document.getElementById('bp-json-file');
+      const pickBtn = document.getElementById('bp-pick-file');
+      const fileNameEl = document.getElementById('bp-file-name');
+      const startBtn = document.getElementById('bp-start');
 
-      document.getElementById('bp-load-default').addEventListener('click', () => {
-        this.loadDefaultDataset(false);
-      });
+      pickBtn.addEventListener('click', () => fileInput.click());
 
-      document.getElementById('bp-json-file').addEventListener('change', async (e) => {
+      fileInput.addEventListener('change', async (e) => {
         const file = e.target.files?.[0];
         if (!file) return;
         try {
           const text = await file.text();
           const parsed = JSON.parse(text);
-          if (!Array.isArray(parsed)) throw new Error('O JSON deve ser um array.');
+          if (!Array.isArray(parsed)) throw new Error('O JSON deve ser uma lista.');
           this.items = parsed;
-          this.updateStats();
-          this.log(`${parsed.length} itens carregados de "${file.name}".`);
+          fileNameEl.textContent = file.name;
+          fileNameEl.style.color = '#15803d';
+          fileNameEl.style.fontWeight = '600';
+
+          startBtn.disabled = false;
+          startBtn.classList.add('bp-start-ready');
+
+          this.updateStats('Pronto para iniciar');
+          this.log(`${parsed.length} comentários carregados de "${file.name}".`);
         } catch (err) {
           alert('Erro ao ler JSON: ' + err.message);
         }
@@ -550,26 +527,13 @@
 
       document.getElementById('bp-dry-run').addEventListener('change', (e) => {
         this.dryRun = e.target.checked;
-        this.log(`Modo Simulação: ${this.dryRun ? 'ATIVADO' : 'DESATIVADO (envio real)'}`);
+        this.log(`MODO SIMULAÇÃO: ${this.dryRun ? 'ATIVADO' : 'DESATIVADO'}`);
       });
 
-      document.getElementById('bp-show-frame').addEventListener('change', (e) => {
-        this.setIframeHidden(!e.target.checked);
-      });
-
-      document.getElementById('bp-delay').addEventListener('change', (e) => {
-        this.delayMs = Math.max(1000, parseInt(e.target.value, 10) || 4000);
-      });
-
-      document.getElementById('bp-start-idx').addEventListener('change', (e) => {
-        this.startFromIndex = Math.max(1, parseInt(e.target.value, 10) || 1);
-      });
-
-      document.getElementById('bp-start').addEventListener('click', () => this.start());
+      startBtn.addEventListener('click', () => this.start());
       document.getElementById('bp-pause').addEventListener('click', () => this.pause());
       document.getElementById('bp-stop').addEventListener('click', () => this.stop());
       document.getElementById('bp-export').addEventListener('click', () => this.exportReport());
-      document.getElementById('bp-reset').addEventListener('click', () => this.resetProgress());
     }
   }
 

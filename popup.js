@@ -5,13 +5,13 @@ async function init() {
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
   if (!tab?.url || !tab.url.includes('brasilparticipativo.presidencia.gov.br/processes/')) {
-    statusBox.textContent = 'Abra a página da consulta no Brasil Participativo e faça login no Gov.br.';
+    statusBox.textContent = 'Abra a página da consulta e faça login no Gov.br.';
     return;
   }
 
   chrome.tabs.sendMessage(tab.id, { action: 'GET_STATUS' }, (res) => {
     if (chrome.runtime.lastError || !res) {
-      statusBox.textContent = 'Recarregue a página da consulta (F5) para ativar o painel.';
+      statusBox.textContent = 'Recarregue a página da consulta (F5) para ativar.';
       return;
     }
     statusBox.textContent = `Carregados: ${res.loaded} | Enviados: ${res.submitted} | Erros: ${res.errors}`;
