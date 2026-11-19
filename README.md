@@ -23,7 +23,10 @@ COMO USAR
 
 3. O painel "Automação Consulta IBAMA" aparecerá automaticamente no canto inferior direito
    selecione seu arquivo com os 88 comentários técnicos.
-   
-   <img width="2532" height="1596" alt="Screenshot 2026-11-19 004219" src="https://github.com/user-attachments/assets/47d8896e-1bd2-4d5f-87cd-3b40e9193980" />
-   
-5. Desmarque "Modo Simulação" quando estiver pronto para enviar e clique em "Iniciar".
+
+   <img width="1916" height="960" alt="image" src="https://github.com/user-attachments/assets/c6d91aa1-d79e-4cda-b141-98728cf15b42" />
+
+5. Clique em "Iniciar".
+
+   <img width="1916" height="1078" alt="v2-demo" src="https://github.com/user-attachments/assets/dfe8cb0c-b3ef-48ff-bf95-e8f498d25b99" />
+
