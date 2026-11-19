@@ -21,12 +21,8 @@ COMO USAR
 1. Acesse https://brasilparticipativo.presidencia.gov.br/processes/listaestimacao/f/6223/
    e faça login com sua conta Gov.br.
 
-3. O painel "Automação Consulta IBAMA" aparecerá automaticamente no canto inferior direito
-   selecione seu arquivo com os 88 comentários técnicos.
-
-   <img width="1916" height="960" alt="image" src="https://github.com/user-attachments/assets/c6d91aa1-d79e-4cda-b141-98728cf15b42" />
-
-5. Clique em "Iniciar".
+2. O painel "Automação Consulta IBAMA" aparecerá automaticamente no canto inferior direito
+   selecione seu arquivo com os comentários técnicos e clique em INICIAR
 
    <img width="1916" height="1078" alt="v2-demo" src="https://github.com/user-attachments/assets/dfe8cb0c-b3ef-48ff-bf95-e8f498d25b99" />
 
